@@ -1,40 +1,168 @@
----
-title: GovLab Academy
-layout: base
----
-{% include urlpath.html %}
-{% assign copy = site.data.contentful.spaces.site_data.indexPageContent[0] %}
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+  
+
+
+
+  <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40012093-17"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-40012093-17');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="Website" property="og:type"/>
+  <meta content="Solving Public Problems with Data | GovLab" property="og:site_name">
+  <meta content="http://sppd.thegovlab.org/static/img/govlab-og.png" property="og:image" />
+  <meta content="Solving Public Problems with Data | GovLab" property="og:title"/>
+  <meta content="Solving Public Problems with Data examines how data can be used to improve decision-making and problem solving in the public sector. The goal is to enable you to define and leverage the value of data to achieve your public mission.
+" property="og:description">
+  <title>Solving Public Problems with Data | GovLab</title>
+  <link rel="shortcut icon" href="./static/img/favicon.ico?v=2" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" />
+  <link rel="stylesheet" href="./static/styles/styles.css" />
+  <link rel="stylesheet" href="./static/styles/dev.css" />
+  <script src="./static/js/modernizr.js"></script>
+
+  <script src="//use.typekit.net/mvc3cdb.js"></script>  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+  <body>
+
+    <section class="purple bottom-bordered">
+  <div class="row">
+    <div class="small-10 large-10 large-centered small-centered columns">
+      <div class="row">
+        <div class="small-12 large-12 left-aligned columns">
+          <a href="http://www.thegovlab.org" class="e-home" title="Home"><img src="./static/img/govlab-logo-white.png" class="govlab-logo" alt="The GovLab Website"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+
+
+
 <section class="b-main-content hero">
   <div class="row" id="title">
     <div class="small-8 large-8 large-centered small-centered column">
       <h4 class="purple bold">
-        {{ copy.title }}
+        SOLVING PUBLIC PROBLEMS WITH DATA
       </h4>
       <h5 class="purple">
-        {{ copy.subtitle }}
+        An Introduction to Data Science and Data Analytical Thinking in the Public Interest
       </h5>
       <h5 class="purple" id="tagline">
-        {{ copy.subtitle2 }}
+        A series of online lectures by leading experts from the Governance Lab
       </h5>
     </div>
   </div>
-  <a class="button raised cta-button" href="#start-learning">{{ copy.learn_button }}</a>
+  <a class="button raised cta-button" href="#start-learning">START LEARNING</a>
   <div class="row" id="quotes">
     <div class="small-8 large-8 small-centered large-centered columns">
       <div class="row" id='quote-row'>
         <div id='quote-slider' class='swipe'>
           <div class='swipe-wrap'>
-            {% for quote in site.data.contentful.spaces.site_data.quote %}
+            
               <div>
                 <div id="quote-wrap">
-                  <span class="purple markdownified" id="quote-text">"{{quote.text | markdownify}}"</span>
+                  <span class="purple markdownified" id="quote-text">"<p>What sort of personality makes for an effective data scientist? Definitely curiosity…. <strong>The biggest question in data science is ‘Why?’</strong> Why is this happening? If you notice that there’s a pattern, ask, ‘Why?’ Is there something wrong with the data or is this an actual pattern going on? Can we conclude anything from this pattern? A natural curiosity will definitely give you a good foundation.</p>
+"</span>
                 </div>
                 <div class="bold" id="link-wrap">
-                  <a href="{{quote.link}}" target="_blank">
-                    <span class="purple" id="quote-link">{{quote.author}}</span></a>
+                  <a href="https://www.linkedin.com/in/datanerd13/" target="_blank">
+                    <span class="purple" id="quote-link">Carla Gentry, Data Scientist at Talent Analytics</span></a>
                 </div>
               </div>
-            {% endfor %}
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>By 2018, the United States alone could face a shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5 million managers and analysts with the know-how to use the analysis of big data to make effective decisions.</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/big-data-the-next-frontier-for-innovation" target="_blank">
+                    <span class="purple" id="quote-link">MGI and McKinsey’s Business Technology Office</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>Deep questions remain about the ability for many areas of government and civil society to identify, cultivate and retain individuals with the necessary skills for success in a world increasingly driven by information technology.</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="https://www.macfound.org/media/files/A_Future_of_Failure_-_Public_.pdf" target="_blank">
+                    <span class="purple" id="quote-link"> NetGain</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>We have tons of data; we are insight poor</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="https://www.data.gov/developers/tweet-from-usdatagov-887/" target="_blank">
+                    <span class="purple" id="quote-link">Tom Beach, Chief Data Strategist, USPTO</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>Leaders in every sector will have to grapple with the implications of big data, not just a few data-oriented managers.</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/big-data-the-next-frontier-for-innovation" target="_blank">
+                    <span class="purple" id="quote-link">MGI and McKinsey’s Business Technology Office</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>The shortage of data scientists is becoming a serious constraint in some sectors.</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century" target="_blank">
+                    <span class="purple" id="quote-link">DJ Patil, Former Chief Data Scientist of the United States</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>There’s a digital revolution taking place both in and out of government in favor of open-sourced data, innovation, and collaboration.</p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="https://en.wikipedia.org/wiki/Kathleen_Sebelius" target="_blank">
+                    <span class="purple" id="quote-link">Kathleen Sebelius, Former United States Secretary of Health and Human Services</span></a>
+                </div>
+              </div>
+            
+              <div>
+                <div id="quote-wrap">
+                  <span class="purple markdownified" id="quote-text">"<p>The world’s national, state and local governments don’t have the right digital skills in the right quantities to meet the challenges of the coming century. This is a Big Problem. </p>
+"</span>
+                </div>
+                <div class="bold" id="link-wrap">
+                  <a href="http://civichall.org/civicist/manifesto-for-public-technology/" target="_blank">
+                    <span class="purple" id="quote-link">Tom Steinberg, founder of mySociety.org</span></a>
+                </div>
+              </div>
+            
           </div>
         </div>
       </div>
@@ -47,22 +175,88 @@ layout: base
 <section class="purple padded">
   <div class="row">
     <div class="small-8 large-8 large-centered small-centered columns">
-      <h4 class="small white bold">{{ copy.authors_title }}</h4>
-      <span class="small white" id="author-subhead">{{ copy.authors_subtitle }}</span>
+      <h4 class="small white bold">LEARN FROM LEADING DATA EXPERTS</h4>
+      <span class="small white" id="author-subhead">Access knowledge and know-how from data experts in a variety of organizations and institutions.</span>
     </div>
   </div>
   <div class="row">
     <div class="small-10 large-10 large-centered small-centered columns">
       <div class="row">
         <div class="author-list small-up-1 medium-up-3 large-up-4 columns">
-          {% assign authors = site.data.contentful.spaces.site_data.author | sort: 'last_name' %}
-          {% for author in authors %}
+          
+          
             <div class="column column-block">
-              <a class="link" href="{{ author.bio_link }}" target="_blank"><img class="author" src="{{author.photo.url}}"></a>
-              <a class="link" href="{{ author.bio_link }}" target="_blank"><p class="white bold tiny author-name">{{author.first_name | upcase}} {{author.last_name | upcase}}</p></a>
-              <a class="link" href="{{ author.bio_link }}" target="_blank"><p class="white extra-tiny">{{author.title}}, {{author.organization}}</p></a>
+              <a class="link" href="https://govex.jhu.edu/author/bblauer/" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/1NrWqGXXmICcmWiaKGIIqY/8d9f7dacd0f0d7be8fed4a5abac3c249/beth_blauer.jpg"></a>
+              <a class="link" href="https://govex.jhu.edu/author/bblauer/" target="_blank"><p class="white bold tiny author-name">BETH BLAUER</p></a>
+              <a class="link" href="https://govex.jhu.edu/author/bblauer/" target="_blank"><p class="white extra-tiny">Executive Director, Johns Hopkins Center for Government Excellence</p></a>
             </div>
-          {% endfor %}
+          
+            <div class="column column-block">
+              <a class="link" href="http://www.thegovlab.org/team.html" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/2CjzeU64BquWwsQuMG8ey0/cd67c92891c0b4b4b29cf5570216b6ef/dinorah-cantu-pedraza.jpg"></a>
+              <a class="link" href="http://www.thegovlab.org/team.html" target="_blank"><p class="white bold tiny author-name">DINORAH CANTÚ-PEDRAZA</p></a>
+              <a class="link" href="http://www.thegovlab.org/team.html" target="_blank"><p class="white extra-tiny">Coordinator, The GovLab Academy</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/daniel-goroff-99883640/" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/iYLDIJQglUO8kG62gSie8/e68466520025df4ae0611e76af2ba381/daniel.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/daniel-goroff-99883640/" target="_blank"><p class="white bold tiny author-name">DANIEL GOROFF</p></a>
+              <a class="link" href="https://www.linkedin.com/in/daniel-goroff-99883640/" target="_blank"><p class="white extra-tiny"> Distinguished Visiting Professor, Columbia University</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/carterhewgley" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/3gXO38TkOAKYgE2W2cSWuQ/50dfdac44731e85b0eee3b893c9bc383/carter.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/carterhewgley" target="_blank"><p class="white bold tiny author-name">CARTER HEWGLEY</p></a>
+              <a class="link" href="https://www.linkedin.com/in/carterhewgley" target="_blank"><p class="white extra-tiny">Professor of Applied Analytics, Johns Hopkins University</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="http://cusp.nyu.edu/people/julia-lane/" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/4F837LktLyiCySeOekyMom/324da65a55860033169e44ebf89965ba/julia.jpg"></a>
+              <a class="link" href="http://cusp.nyu.edu/people/julia-lane/" target="_blank"><p class="white bold tiny author-name">JULIA LANE</p></a>
+              <a class="link" href="http://cusp.nyu.edu/people/julia-lane/" target="_blank"><p class="white extra-tiny">Professor, NYU Center for Urban Science and Progress</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/gideon-mann-223a2912" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/3pkL3PfEwMaW4MiemM4Qe6/ed1386412291696f2e42f20a5441424e/gideon.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/gideon-mann-223a2912" target="_blank"><p class="white bold tiny author-name">GIDEON MANN</p></a>
+              <a class="link" href="https://www.linkedin.com/in/gideon-mann-223a2912" target="_blank"><p class="white extra-tiny">Head of Data Science, CTO Office at Bloomberg LP</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/amen-ra-mashariki-1452885" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/YDeUgoH1iS46O8OaeEeiu/2383745f89a26adc6cd98ba6fdd284fe/amen_ra.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/amen-ra-mashariki-1452885" target="_blank"><p class="white bold tiny author-name">AMEN RA MASHARIKI</p></a>
+              <a class="link" href="https://www.linkedin.com/in/amen-ra-mashariki-1452885" target="_blank"><p class="white extra-tiny">Urban Analytics Lead, Esri: GIS Mapping Software, Spatial Data Analytics & Location Platform</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="http://www.thegovlab.org/beth-noveck.html" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/5SCqzXVoKkUOa0qGCOM8Iu/8aece888448d65c7403be7e0ab8bc4d3/beth.jpg"></a>
+              <a class="link" href="http://www.thegovlab.org/beth-noveck.html" target="_blank"><p class="white bold tiny author-name">BETH SIMONE NOVECK</p></a>
+              <a class="link" href="http://www.thegovlab.org/beth-noveck.html" target="_blank"><p class="white extra-tiny">Professor and Director, The Governance Lab</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/quentin-palfrey-a57103/" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/6v5Jn8xpN6aEioEmIy8Eo4/ad1487dfcb8ed436db1b5d087255516d/quentin.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/quentin-palfrey-a57103/" target="_blank"><p class="white bold tiny author-name">QUENTIN PALFREY</p></a>
+              <a class="link" href="https://www.linkedin.com/in/quentin-palfrey-a57103/" target="_blank"><p class="white extra-tiny">Former Executive Director, Abdul Latif Jameel Poverty Action Lab, North America | MIT Department of Economics</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://www.linkedin.com/in/sahuguet/" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/25qHOP6IqMqsogOAkKuEsI/660c4f0128fa71ed55101feacb4e6e47/arnaud.jpg"></a>
+              <a class="link" href="https://www.linkedin.com/in/sahuguet/" target="_blank"><p class="white bold tiny author-name">ARNAUD SAHUGUET</p></a>
+              <a class="link" href="https://www.linkedin.com/in/sahuguet/" target="_blank"><p class="white extra-tiny">Director of the Foundry, Cornell Tech</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="http://www.thegovlab.org/stefaan-verhulst.html" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/46Wb29om0wcicOWe2W0SE2/39e85936d831e20efd8be3e259976628/stefaan.jpg"></a>
+              <a class="link" href="http://www.thegovlab.org/stefaan-verhulst.html" target="_blank"><p class="white bold tiny author-name">STEFAAN VERHULST</p></a>
+              <a class="link" href="http://www.thegovlab.org/stefaan-verhulst.html" target="_blank"><p class="white extra-tiny">Co-Founder and Director of Research, The Governance Lab</p></a>
+            </div>
+          
+            <div class="column column-block">
+              <a class="link" href="https://about.me/benwellington" target="_blank"><img class="author" src="//images.ctfassets.net/nd6t1o1igxfa/2tY9uvec0Ym4YGYsiQwSQy/50991bf390aa0d78f48d6eaac9a56e01/ben.jpg"></a>
+              <a class="link" href="https://about.me/benwellington" target="_blank"><p class="white bold tiny author-name">BEN WELLINGTON</p></a>
+              <a class="link" href="https://about.me/benwellington" target="_blank"><p class="white extra-tiny">Creator of I Quant NY and Visiting Assistant Professor, Pratt Institute in Brooklyn</p></a>
+            </div>
+          
         </div>
       </div>
     </div>
@@ -73,18 +267,18 @@ layout: base
     <div class="small-10 large-5 large-offset-1 small-offset-1 columns" style="height: 250px;">
       <div class="relative">
         <div class="vertically-center">
-          <h4 class="small white bold">{{ copy.splash_video_title }}</h4>
-          <span class="small grey bold" id="preview-subhead">{{ copy.splash_video_subtitle }}</span>
+          <h4 class="small white bold">TODAY, KNOWING HOW TO WORK WITH DATA MATTERS MORE THAN EVER.</h4>
+          <span class="small grey bold" id="preview-subhead">Watch Data Scientist Ben Wellington explain why:</span>
         </div>
       </div>
     </div>
     <div class="small-10 small-offset-1 large-offset-0 large-5 columns end video" style="height: 250px;">
       <div class="relative block-center" style="max-width: 500px;">
         <div class="vertically-center">
-          <a href="{{ copy.splash_video_url }}" target="_blank">
+          <a href="./videos/Solving%20Public%20Problems%20with%20Data%20-%20Why%20Data%20Matters%20(Ben%20Wellington)/story_html5.html" target="_blank">
             <div class="inline-block">
-              <img src="{{ base }}/static/img/play_button.png" class="play-button" />
-              <img src="{{ copy.splash_video_thumbnail.url }}" />
+              <img src="./static/img/play_button.png" class="play-button" />
+              <img src="//images.ctfassets.net/nd6t1o1igxfa/4G5GwVreVyYUsagY0cGq4C/54303f375656041cf892a0663184908d/ben_wellington_preview.jpg" />
             </div>
           </a>
         </div>
@@ -95,7 +289,7 @@ layout: base
 <section class="purple padded">
   <div class="row">
     <div class="small-10 large-10 large-centered small-centered columns">
-      <span class="white">{{ copy.lectures_title }}</span>
+      <span class="white">READY TO USE YOUR DATA TO ACHIEVE YOUR PUBLIC MISSION?</span>
       <a name="start-learning"></a>
     </div>
   </div>
@@ -103,27 +297,258 @@ layout: base
 <section class="lectures padded">
   <div class="row">
     <div class="small-10 large-10 large-centered small-centered columns">
-      <span class="bold chooser-headline">{{ copy.lectures_subtitle }}</span>
+      <span class="bold chooser-headline">Click on a tile below to watch any lecture. The lectures vary in length from 25 to 60 minutes. Each lecture includes selected readings and links to additional resources.</span>
     </div>
   </div>
   <div class="row">
     <div class="small-10 large-10 large-centered small-centered columns">
       <div class="row">
         <div class="small-up-1 medium-up-2 large-up-4">
-        {% assign lecture_data = site.data.contentful.spaces.site_data.video | sort: 'order' %}
-        {% for lecture in lecture_data %}
-          {% assign active = lecture.active %}
-          {% assign title = lecture.title %}
-          {% assign url = lecture.poster.url %}
-          {% assign authors = lecture.author %}
-          {% assign path="lectures" %}
-          {% include lecture_preview.html active=active title=title url=url authors=authors path=path %}
-        {% endfor %}
+        
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/introduction-to-evidence-based-decision-making-examples-in-economic-development.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/6IfVsrDJDOwymwwi6ua6cE/41f9527e6f7994dec2351303d2c8c31f/quentin_crop.jpg" />
+        <div class="lecture-data">
+          <p class="tiny">Introduction to Evidence-Based Decision-Making: Examples in Economic Development</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/quentin-palfrey-a57103/" target="_blank">Quentin Palfrey</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/data-analytical-thinking-and-methods-i-how-to-define-a-research-question-and-introduction-to-statistical-approaches-to-draw-inference.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/7epDXq1FfyYakcoEiOE0qK/6388f30009b4e28a5ed15debaf062a16/julia_crop.jpg" />
+        <div class="lecture-data">
+          <p class="tiny">Data Analytical Thinking and Methods I: How To Define a Research Question and Introduction to Statistical Approaches to Draw Inference</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="http://cusp.nyu.edu/people/julia-lane/" target="_blank">Julia Lane</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/machine-learning-applications-for-the-public-sector.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/6bYIrm7hSMkiqUEeiAW2mK/4c56d7c612cbea96403c8026a27f71fd/gideon_crop.jpg" />
+        <div class="lecture-data">
+          <p class="tiny">Machine Learning Applications for the Public Sector</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/gideon-mann-223a2912" target="_blank">Gideon Mann</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/discovering-and-collecting-data-practical-advice-for-government-managers.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/5emzuLUbQAMUiOcAq62WYs/34f2f6105c5bb843b889ce6f45a36984/carter_crop.jpg" />
+        <div class="lecture-data">
+          <p class="tiny">Discovering and Collecting Data: Practical Advice for Government Managers</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/carterhewgley" target="_blank">Carter Hewgley</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/platforms-and-where-to-store-the-data.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/7mbyi9xMBigGCO2mWAGoi/5b51f60c75733b294d6cc32bf7d143c7/arnaud_crop.jpg" />
+        <div class="lecture-data">
+          <p class="tiny">Platforms and Where to Store the Data?</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/sahuguet/" target="_blank">Arnaud Sahuguet</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/data-analytical-thinking-and-methods-ii-correlation-causation-and-decision-making.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/1AR72w1vOIW4YGQAugUm0U/14f4867a8655886714b4034ee52f38b9/Screen_Shot_2017-11-14_at_12.49.40_PM.png" />
+        <div class="lecture-data">
+          <p class="tiny">Data Analytical Thinking and Methods II: Correlation, Causation and Decision-Making</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/daniel-goroff-99883640/" target="_blank">Daniel Goroff</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/barriers-to-building-a-data-practice-in-government.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/6S47YtyVuEAE64MsOSmyqw/6b0c4e8db477a065435c62686b5d4ebe/Screen_Shot_2017-11-14_at_12.55.17_PM.png" />
+        <div class="lecture-data">
+          <p class="tiny">Barriers to Building a Data Practice in Government</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://govex.jhu.edu/author/bblauer/" target="_blank">Beth Blauer</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/data-collaboratives-creating-public-value-by-exchanging-data.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/2G8xKJoS9qyaK6qa4gy4ck/28771b927b2580b577671dece6c98b30/Screen_Shot_2017-11-14_at_12.57.31_PM.png" />
+        <div class="lecture-data">
+          <p class="tiny">Data Collaboratives: Creating Public Value by Exchanging Data</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="http://www.thegovlab.org/stefaan-verhulst.html" target="_blank">Stefaan Verhulst</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block">
+      <a href="lectures/strengthening-a-data-analytic-culture.html">
+        <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/6tljBEsufSEGusAIKcEOY4/740748f00dca01a77e70c23149c4a015/Screen_Shot_2017-11-14_at_12.57.49_PM.png" />
+        <div class="lecture-data">
+          <p class="tiny">Strengthening a Data Analytic Culture</p>
+          <p class="bold tiny">
+            
+              <a class="black-link" href="https://www.linkedin.com/in/amen-ra-mashariki-1452885" target="_blank">Amen Ra Mashariki</a>
+            
+          </p>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+        
+          
+          
+          
+          
+          
+          <div class="column column-block block-wrap">
+  
+    <div class="lecture-block coming-soon">
+      <img class="lecture-preview" src="//images.ctfassets.net/nd6t1o1igxfa/44bXFDFDZuc8UKCmiAI8Ki/05d9e3770b67549756abcc4d626487ad/coming_soon.jpg" />
+      <div class="lecture-data">
+        <p class="tiny">Policies and Practices for Data Governance and Data Sharing</p>
+        <p class="bold tiny">
+          
+            <a class="black-link" href="http://www.thegovlab.org/beth-noveck.html" target="_blank">Beth Simone Noveck</a>
+          
+        </p>
+      </div>
+    </div>
+  
+</div>
+
+        
         <div class="column column-block block-wrap">
           <a class="link" href="https://govlab.typeform.com/to/lOLcb5" target="_blank">
             <div class="suggest-block">
-              <p class="white tiny">{{ copy.suggest_topic1 }}</p>
-              <p class="white suggest-cta">{{ copy.suggest_topic2 }}</p>
+              <p class="white tiny">DIDN’T FIND WHAT YOU’RE LOOKING FOR?</p>
+              <p class="white suggest-cta">SUGGEST A TOPIC</p>
             </div>
           </a>
         </div>
@@ -137,15 +562,102 @@ layout: base
     <div class="small-10 large-10 large-centered small-centered columns">
       <div class="row">
         <div class="small-4 large-4 left-aligned columns">
-          <p class="white small bold">{{ copy.subscribe1 }}</p>
-          <p class="tiny white">{{ copy.subscribe2 }}</p>
+          <p class="white small bold">Not sure where to start?</p>
+          <p class="tiny white">Subscribe to our guided learning experience to receive our recommended weekly program!</p>
         </div>
         <div class="small-6 large-6 left-aligned columns">
           <a class="link" href="https://govlab.typeform.com/to/CiI9Hj" target="_blank">
-            <input type="submit" class="white button form-submit" value="{{ copy.subscribe3 }}">
+            <input type="submit" class="white button form-submit" value="CLICK HERE TO TELL US MORE ABOUT YOU">
           </a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+    <!-- Footer -->
+<footer>
+  <section class="dark-background padded bottom-bordered">
+  <div class="row">
+    <div class="small-10 large-10 large-centered small-centered columns">
+      <div class="row">
+        <div class="left-aligned column medium-6 large-6 small-12">
+          <h4 class="tiny white bold subhead">WITH SUPPORT FROM</h4>
+          <a class="partner-logo" href="http://www.arnoldfoundation.org/" target="_blank">
+            <img class="partner-logo" id="ljaf-logo" src="./static/img/logo-ljaf.png" alt="Laura and John Arnold Foundation">
+          </a>
+        </div>
+        <div class="left-aligned column medium-6 large-6 small-12">
+          <h4 class="tiny white bold subhead">BASED AT</h4>
+          <a href="https://engineering.nyu.edu/tandon" target="_blank">
+            <img class="partner-logo" id="nyu-tandon-logo" src="./static/img/nyu.png" alt="NYU Tandon School of Engineering - New York University">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="padded cc-attribution">
+    <div class="row">
+      <div class="small-10 large-10 large-centered small-centered columns">
+        <div class="row">
+          <div class="left-aligned column large-12 small-12">
+            <p class="extra-tiny white"><a class="cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>This work by The GovLab is licensed under a <a rel="license" class="extra-tiny white link" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <section>
+</footer>
+
+    <!-- Vendor Stuff -->
+<script src="./static/js/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="./static/assets/swipe/swipe.js"></script>
+
+<!-- My custom JS -->
+<script>
+  window.mySwipe = new Swipe(document.getElementById('quote-slider'), {
+    startSlide: 0,
+    speed: 1000,
+    auto: 5000,
+    continuous: true,
+    disableScroll: false,
+    stopPropagation: false
+  });
+</script>
+<script>
+  function getBackgroundColor($dom) {
+    var bgColor = "";
+    while ($dom[0].tagName.toLowerCase() != "html") {
+      bgColor = $dom.css("background-color");
+      if (bgColor != "rgba(0, 0, 0, 0)" && bgColor != "transparent") {
+        break;
+      }
+      $dom = $dom.parent();
+    }
+    return bgColor;
+  }
+  // embedded lecture videos play on a white background
+  // due to the html in the embedded iframe source
+  // this looks terrible with the current design
+  // this script finds the background of the parent
+  // section and sets the iframe source background to match
+  $("iframe[name=lecture]").load(function() {
+    var iframe = $(this)
+    var iframeBody = $(iframe).contents().find('body');
+    var bgColor = getBackgroundColor(iframe)
+    // this is because the default body color is
+    // rgba(0,0,0,0.03) so it ends up getting double-applied
+    var opaqueColor = bgColor.replace(/[^,]+(?=\))/, '0.0')
+    $(iframeBody).css('backgroundColor', opaqueColor);
+  });
+
+</script>
+<script>
+  $(document).foundation();
+</script>
+
+  </body>
+</html>
